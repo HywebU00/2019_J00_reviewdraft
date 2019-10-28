@@ -594,9 +594,10 @@
                 background-color: #eee;
                 color: #fff;
                 text-align: center;
-                height: 170px;
+                height: 190px;
                 padding: 50px 10px 20px;
                 border: 1px solid #dfdfdf;
+                font-size: 1.125em;
                 @include gradient($primaryColor, $thirdColor, horizontal);
                 @include box-sizing;
                 &:hover {
@@ -604,10 +605,24 @@
                 }
                 span {
                     display: block;
-                    margin-bottom: 15px;
+                    margin-bottom: 20px;
+                    font-size: .938em;
                     em {
-                        font-size: 5em;
+                        font-size: 4em;
                         font-style: normal;
+                        position: relative;
+                        padding-right: 25px;
+                        font-weight: 500;
+                        &:after{
+                            content: '';
+                            width:1px;
+                            height: 40px;
+                            background-color:#fff;
+                            position: absolute;
+                            right:10px;
+                            bottom:15px;
+                            transform: rotate(45deg);
+                        }
                     }
                 }
                 &.tobe_processed {
