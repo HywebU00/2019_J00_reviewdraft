@@ -581,11 +581,11 @@
                 width: 32%;
                 margin: 0 .66% 8px;
             }
-            @media(max-width: 480px) {
+            @include screen('xs_mobile'){
                 width: 48%;
                 margin: 0 1% 8px;
             }
-            @media(max-width: 380px) {
+            @media(max-width: 480px) {
                 width: 100%;
                 margin: 0 0 8px;
             }
