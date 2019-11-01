@@ -488,10 +488,11 @@
         border: 1px solid #000;
         text-shadow: none;
         padding: .8em 1em !important;
+        border-radius: 0;
         &:hover {
             padding: .8em 1em !important;
-            border: 1px solid #666 !important;
-            background-color: #666 !important;
+            border: 1px solid lighten(#000,40) !important;
+            background-color: lighten(#000,40) !important;
             color: #fff;
         }
     }
@@ -581,7 +582,7 @@
                 width: 32%;
                 margin: 0 .66% 8px;
             }
-            @include screen('xs_mobile'){
+            @include screen('xs_mobile') {
                 width: 48%;
                 margin: 0 1% 8px;
             }
@@ -598,39 +599,38 @@
                 padding: 50px 10px 20px;
                 border: 1px solid #dfdfdf;
                 font-size: 1.125em;
-                @include gradient($primaryColor, $thirdColor, horizontal);
+                @include gradient($primaryColor, $thirdColor, diagonal);
                 @include box-sizing;
                 &:hover {
-                    @include gradient(lighten($primaryColor,5), lighten($thirdColor,5), horizontal);
+                    @include gradient(lighten($primaryColor, 5), lighten($thirdColor, 5), diagonal);
                 }
                 span {
                     display: block;
                     margin-bottom: 20px;
                     font-size: .938em;
                     em {
-                        font-size: 4em;
+                        font-size: 3.4em;
                         font-style: normal;
                         position: relative;
                         padding-right: 25px;
                         font-weight: 500;
-                        &:after{
+                        &:after {
                             content: '';
-                            width:1px;
+                            width: 1px;
                             height: 40px;
-                            background-color:#fff;
+                            background-color: #fff;
                             position: absolute;
-                            right:10px;
-                            bottom:15px;
+                            right: 10px;
+                            bottom: 15px;
                             transform: rotate(45deg);
                         }
                     }
                 }
                 &.tobe_processed {
-                    @include gradient(#75191b, #b25ba2, horizontal);
+                    @include gradient(#f48865, #ffd151, diagonal);
                     &:hover {
-                        @include gradient(lighten(#75191b,5), lighten(#b25ba2,5), horizontal);
+                        @include gradient(lighten(#f48865, 5), lighten(#ffd151, 5), diagonal);
                     }
-                    
                 }
             }
         }
