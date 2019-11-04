@@ -342,7 +342,7 @@
 }
 // 下一步 步驟按鈕
 .stepbtn_next {
-    @include gradient($primaryColor, $secondaryColor, horizontal);
+    @include gradient($primaryColor,lighten($primaryColor,20), horizontal);
     color: #fff;
     border-radius: 0;
     padding: 1em 5em;
@@ -353,7 +353,7 @@
     }
     &:hover {
         border: none !important;
-        @include gradient(darken($primaryColor, 5), darken($secondaryColor, 5), horizontal);
+        @include gradient(darken($primaryColor, 5), darken($primaryColor, 10), horizontal);
         color: #fff;
     }
     &:before {
@@ -370,7 +370,7 @@
 }
 // 上一步 步驟按鈕
 .stepbtn_prev {
-    @include gradient($primaryColor, $secondaryColor, horizontal);
+    @include gradient($primaryColor, lighten($primaryColor,20), horizontal);
     color: #fff;
     border-radius: 0;
     padding: 1em 5em;
@@ -381,7 +381,7 @@
     }
     &:hover {
         border: none !important;
-        @include gradient(darken($primaryColor, 5), darken($secondaryColor, 5), horizontal);
+        @include gradient(darken($primaryColor, 5), darken($primaryColor, 10), horizontal);
         color: #fff;
     }
     &:before {
@@ -398,7 +398,7 @@
 }
 // submit reset
 .stepbtn_submit, .stepbtn_reset {
-    @include gradient($primaryColor, $secondaryColor, horizontal);
+    @include gradient($primaryColor, lighten($primaryColor,20), horizontal);
     color: #fff;
     border-radius: 0;
     padding: 1em 5em;
@@ -409,7 +409,7 @@
     }
     &:hover {
         border: none !important;
-        @include gradient(darken($primaryColor, 5), darken($secondaryColor, 5), horizontal);
+        @include gradient(darken($primaryColor, 5), darken($primaryColor, 10), horizontal);
         color: #fff;
     }
 }
@@ -420,7 +420,7 @@
     background: #fff;
     border-radius: .2em;
     .keyword {
-        background-color: #d6f1f0;
+        background-color: lighten($thirdColor,15);
         color: #333;
         position: relative;
         padding: 3px 35px 0px 8px;
@@ -499,7 +499,7 @@
 }
 //仿頁籤
 .like_tab {
-    border-bottom: 3px solid $linkColor;
+    border-bottom: 3px solid darken( $primaryColor,10);
     overflow: hidden;
     margin-bottom: 10px;
     ul {
@@ -518,7 +518,7 @@
             }
             &.here {
                 a {
-                    background-color: $linkColor;
+                    background-color:darken( $primaryColor,10);
                     color: #fff;
                     position: relative;
                     &:before {
@@ -599,10 +599,10 @@
                 padding: 50px 10px 20px;
                 border: 1px solid #dfdfdf;
                 font-size: 1.125em;
-                @include gradient($primaryColor, $thirdColor, diagonal);
+                @include gradient($primaryColor, lighten($primaryColor, 25), diagonal);
                 @include box-sizing;
                 &:hover {
-                    @include gradient(lighten($primaryColor, 5), lighten($thirdColor, 5), diagonal);
+                    @include gradient(lighten($primaryColor, 5), lighten($primaryColor, 35), diagonal);
                 }
                 span {
                     display: block;

@@ -31,7 +31,7 @@
                     padding: 0 1em;
                 }
                 &:hover {
-                    color: lighten($linkColor, 30);
+                    color: lighten($linkColor, 20);
                 }
             }
             &.hasChild {
@@ -53,9 +53,9 @@
             }
             &:hover {
                 >a {
-                    color: lighten($linkColor, 30);
+                    color: lighten($linkColor, 20);
                     &:after {
-                        border: 2px solid lighten($linkColor, 30);
+                        border: 2px solid lighten($linkColor, 20);
                         border-bottom: none;
                         border-left: none;
                     }
@@ -110,7 +110,7 @@
                 padding-right: 2em;
                 &:hover,
                 &:focus {
-                    background: $primaryColor;
+                    background: $linkColor;
                 }
                 &:after {
                     content: '';
