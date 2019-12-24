@@ -248,6 +248,16 @@
         }
     }
 }
+//檔案名稱
+.filename{
+    margin-bottom:5px;
+    a{
+        color: $linkColor;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
 // 註冊完成
 .registeredok {
     background-color: #eee;
