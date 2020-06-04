@@ -182,3 +182,6 @@ $(function() {
     $('.modal .close').click(closeModal);
     $('.modal .closebtn').click(closeModal);
 }); 
+
+
+

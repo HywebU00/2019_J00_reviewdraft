@@ -52,6 +52,9 @@ table {
     .aRight {
         text-align: right;
     }
+    .date{
+        width: 20%;
+    }
 }
 .table_list {
     @include screen('xs_mobile') {
