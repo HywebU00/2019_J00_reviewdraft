@@ -5,6 +5,9 @@
     text-align: center;
     font-size: .938em;
     @extend %clearfix; // outline: 1px solid red;
+    &.pageleft{
+        text-align: left;
+    }
     span {
         color: $primaryColor;
         margin: 0px .5em;

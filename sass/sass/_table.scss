@@ -24,8 +24,8 @@ table {
             word-break: break-all;
             color: $aHover;
             &:hover {
-                    text-decoration: underline;
-                }
+                text-decoration: underline;
+            }
         }
     }
     th {
@@ -52,7 +52,7 @@ table {
     .aRight {
         text-align: right;
     }
-    .date{
+    .date {
         width: 20%;
     }
 }
@@ -105,6 +105,9 @@ table {
         }
         .aRight {
             text-align: left;
+        }
+        .date {
+            width:100%;
         }
     }
 }
