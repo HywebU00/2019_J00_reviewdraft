@@ -82,25 +82,24 @@ body {
     @include screen('mobile') {
         padding-top: 90px;
     }
-    
     >.container {
         @include gutter(); //gutter 代表左右要留白
     }
     .inheader {
         position: relative;
         h1 {
-            margin: 0;
+            margin: 0 0 0 10px;
             padding: 0;
             font-weight: 400;
-            margin-bottom: 15px;
-            font-size: 1.188em;
+            margin-bottom: 35px;
+            font-size: 2.187em;
             a {
                 display: inline-block;
                 color: $color-word;
                 span {
                     display: block;
-                    font-size: 1.875em;
-                    margin-top: 15px;
+                    font-size: 0.5625em;
+                    margin-bottom: 25px;
                     line-height: 1.3em;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -127,9 +126,9 @@ body {
                 font-size: 1.25em;
                 margin-right: 5px;
                 text-shadow: 0 0 8px #fff, 0 0 8px #fff, 0 0 8px #fff;
-                @media(max-width: 480px){
+                @media(max-width: 480px) {
                     display: block;
-                    margin-bottom:5px;
+                    margin-bottom: 5px;
                 }
             }
             select {
@@ -139,7 +138,7 @@ body {
                 margin-right: 5px;
                 @media(max-width: 480px) {
                     height: 2.5em;
-                   margin-top:1px;
+                    margin-top: 1px;
                 }
             }
             a {
