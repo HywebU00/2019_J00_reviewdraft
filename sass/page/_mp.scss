@@ -63,11 +63,11 @@
 // 期刊簡介
 .periodical_block {
     position: relative;
-    // height: 599px;
+    height: 599px;
     @include screen('mobile') {
-        // height: 350px;
+        height: 350px;
     }
-    @media(max-width: 480px) {
+    @include screen('xs_mobile') {
         height: auto;
     }
     &:before {
@@ -83,8 +83,10 @@
         @include screen('mobile') {
             height: 350px;
         }
-        @media(max-width: 480px) {
+        @include screen('xs_mobile') {
             height: 100%;
+            background-position: center bottom;
+            background-size: auto 100%;
         }
     }
     &:after {
@@ -135,11 +137,10 @@
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
-                @include screen('mobile'){
+                @include screen('mobile') {
                     display: none;
                 }
             }
-
         }
     }
     >.content {
@@ -171,7 +172,7 @@
         @include screen('mobile') {
             height: 350px;
         }
-        @media(max-width: 480px) {
+        @include screen('xs_mobile') {
             height: 100%;
             left: 0px;
             transform: skewX(0deg);
@@ -241,7 +242,7 @@
         padding: 50px 15px;
         // min-height: inherit;
     }
-    @include screen('mobile'){
+    @include screen('mobile') {
         padding: 30px 15px;
     }
     .news {

@@ -160,14 +160,14 @@ $(function() {
 /*-----------------------------------*/
 $(function() {
     $('#modal1').hide(); //先隱藏視窗
-    $('.modal').after('<div class="modal_overlay"></div>'); //新增透明底
-    $('.modal').prepend('<button type="button" class="close">關閉</button>'); //新增關閉按鈕
+    $('.periodical_lightbox').after('<div class="modal_overlay"></div>'); //新增透明底
+    $('.periodical_lightbox').prepend('<button type="button" class="close">關閉</button>'); //新增關閉按鈕
     // 
     $('.modal_overlay').hide(); //隱藏透明底
     //按鈕動作
     $('#openModal').click(function(e) {
         $('.modal_overlay').fadeIn(100);
-        $('.modal').fadeIn(100);
+        $('.periodical_lightbox').fadeIn(100);
         $('body').addClass('noscroll');
         e.preventDefault();
     });
