@@ -63,9 +63,9 @@
 // 期刊簡介
 .periodical_block {
     position: relative;
-    height: 599px;
+    // height: 599px;
     @include screen('mobile') {
-        height: 350px;
+        // height: 350px;
     }
     @media(max-width: 480px) {
         height: auto;
@@ -191,11 +191,11 @@
         display: block;
         p {
             line-height: 2em;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 5;
+            // -webkit-box-orient: vertical;
         }
         .login_btn {
             a {
